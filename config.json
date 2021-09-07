@@ -1,17 +1,11 @@
 {
   "base_url": "https://wutali-nextjs-netlify-blog.netlify.app",
-  "site_title": "Next.js Netlify Blog",
-  "site_description": "Next.js blog template for Netlify",
+  "site_title": "Ponders East",
+  "site_description": "All listings in the ))) area",
   "site_keywords": [
-    {
-      "keyword": "Next.js"
-    },
-    {
-      "keyword": "Netlify"
-    },
-    {
-      "keyword": "React"
-    }
+    "Estate Agent",
+    "Houses",
+    "Affordable"
   ],
   "posts_per_page": 5,
   "twitter_account": "@my-account",
