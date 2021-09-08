@@ -14,7 +14,9 @@ interface mapProps {
 coordinates:cords;
 containerStyle?: sizes;
 }
-
+interface window {
+  google:any;
+}
 
 function MyComponent(
     
@@ -29,7 +31,7 @@ const isntMobile = 600;
   const [map, setMap] = React.useState(null)
 
   const onLoad = React.useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds();
+    const bounds = new (window as any).google.maps.LatLngBounds();
     map.fitBounds(bounds);
     setMap(map)
   }, [])
