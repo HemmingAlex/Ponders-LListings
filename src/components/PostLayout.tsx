@@ -83,7 +83,7 @@ export default function PostLayout({
           </ul>
         </article>
 
-        <Maps coordinates={{lng:22, lat:22}} containerStyle={{height:450, width:""}}/>
+        <Maps coordinates={{lng:22, lat:22}} containerStyle={{height:450}}/>
         <footer>
           <div className={"social-list"}>
             <SocialList />
