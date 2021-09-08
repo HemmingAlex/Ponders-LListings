@@ -22,6 +22,18 @@ export function SocialList({}) {
       >
         <GitHub width={24} height={24} fill={"#222"} />
       </a>
+      <br/>
+      <br/>
+
+      Email: james.ponderseast@outlook.com
+        <br/>
+Landline: 020360 96772
+<br/>
+Direct call: 077384 97337 
+<br/>
+<br/>
+
+
       <style jsx>{`
         a {
           display: inline-block;
