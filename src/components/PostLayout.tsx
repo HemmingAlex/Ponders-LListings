@@ -12,6 +12,7 @@ import { SocialList } from "./SocialList";
 import TagButton from "./TagButton";
 import { getAuthor } from "../lib/authors";
 import { getTag } from "../lib/tags";
+import Maps from "./maps"
 
 type Props = {
   title: string;
@@ -81,6 +82,8 @@ export default function PostLayout({
             ))}
           </ul>
         </article>
+
+        <Maps coordinates={{lng:22, lat:22}} containerStyle={{height:450, width:""}}/>
         <footer>
           <div className={"social-list"}>
             <SocialList />

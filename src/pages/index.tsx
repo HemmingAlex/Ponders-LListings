@@ -10,12 +10,13 @@ export default function Index() {
       <BasicMeta url={"/"} />
       <OpenGraphMeta url={"/"} />
       <TwitterCardMeta url={"/"} />
+      
       <div className="container">
         <div>
           <h1>
             Ponders East Listings<span className="fancy">.</span>
           </h1>
-          <span className="handle">@nextjs-netlify-blog</span>
+          <span className="handle">Gibson and co</span>
           <h2>Great houseses for living and not living in</h2>
           <SocialList />
        </div>

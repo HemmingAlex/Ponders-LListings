@@ -4,6 +4,7 @@ import PostItem from "./PostItem";
 import TagLink from "./TagLink";
 import Pagination from "./Pagination";
 import { TagContent } from "../lib/tags";
+import Maps from "./maps"
 
 type Props = {
   posts: PostContent[];
@@ -17,10 +18,15 @@ export default function PostList({ posts, tags, pagination }: Props) {
   return (
     <div className={"container"}>
       <div className={"posts"}>
-        <ul className={"post-list"}>
+            <ul className={"post-list"}>
+            <h1>Listings</h1>
           {posts.map((it, i) => (
             <li key={i}>
               <PostItem post={it} />
+              <div style={{display:"flex", justifyContent: "center", padding:"30px 0px"}}>
+              <Maps coordinates={{lng:22, lat:22}} containerStyle={{height:150, width:600}}/>
+        </div>
+
             </li>
           ))}
         </ul>
