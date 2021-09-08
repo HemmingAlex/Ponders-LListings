@@ -9,6 +9,9 @@
   ],
   "posts_per_page": 5,
   "twitter_account": "@PondersEast",
+<<<<<<< HEAD
   "facebook_account": "PondersEast/services",
+=======
+>>>>>>> 2aaa9e89dd76f918a5a65f9fc30c1ea86ea9d5b0
   "github_account": "HemmingAlex"
 }
