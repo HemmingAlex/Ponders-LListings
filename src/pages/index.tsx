@@ -19,6 +19,12 @@ export default function Index() {
           <h2>A blog template with Next.js and Netlify.</h2>
           <SocialList />
         </div>
+
+        Email: james.ponderseast@outlook.com
+        <br/>
+Landline: 020360 96772
+<br/>
+Direct call: 077384 97337
       </div>
       <style jsx>{`
         .container {
