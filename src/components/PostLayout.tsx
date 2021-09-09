@@ -16,8 +16,8 @@ import Maps from "./maps"
 
 type Props = {
   title: string;
-  lat?: number;
-  lng?:number;
+  lat?: any;
+  lng?:any;
   date: Date;
   slug: string;
   tags: string[];
@@ -86,7 +86,7 @@ export default function PostLayout({
             ))}
           </ul>
         </article>
-        <Maps  coordinates={(lat && lng)? {lng:lng, lat:lat} : {lng:-1.8928286164832717,  lat:52.44983527357394}} containerStyle={{height:450}}/>
+        <Maps  coordinates={lng ? {lng:lng, lat:lat} : {lat:1.89282,  lng:52.44983}} containerStyle={{height:450}}/>
         <footer>
           <div className={"social-list"}>
             <SocialList />
