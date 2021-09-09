@@ -5,12 +5,16 @@ import yaml from "js-yaml";
 
 const postsDirectory = path.join(process.cwd(), "content/posts");
 
+
+
 export type PostContent = {
   readonly date: string;
   readonly title: string;
   readonly slug: string;
   readonly tags?: string[];
   readonly fullPath: string;
+  readonly lat?: number;
+  readonly lng?: number;
 };
 
 let postCache: PostContent[];

@@ -13,6 +13,7 @@ type cords = {
 interface mapProps {
 coordinates:cords;
 containerStyle?: sizes;
+// posts?:any;
 }
 interface window {
   google:any;
