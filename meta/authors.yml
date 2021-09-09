@@ -1,5 +1,13 @@
 authors:
   - slug: wutali
     name: Takahiro Fujiwara
-    introduction:
-      The person in the demo
+    introduction: The person in the demo
+  - slug: Gibson
+    name: James Gibsom
+    introduction: The CEO and founder of the company Ponders East, estate agent and
+      customer service operations for houses across the UK and France.
+  - slug: Hemming
+    name: Alexander Hemming
+    introduction: |-
+      The CTO and head of operations of the company Odd media. 
+      Software engineer: react, node, golang, sveltekit,
