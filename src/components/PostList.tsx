@@ -25,7 +25,7 @@ export default function PostList({ posts, tags, pagination }: Props) {
             <li key={i}>
               <PostItem post={it} />
               <div style={{display:"flex", justifyContent: "center", padding:"30px 0px"}}>
-              <Maps  coordinates={(it.lat && it.lng)? {lng:it.lng, lat:it.lat} : {lng:52.44983527357394,  lat:-1.8928286164832717}} containerStyle={{height:150}}/>
+              <Maps  coordinates={it.lat? {lng:it.lng, lat:it.lat} : {lng:-1.8928286164832717,  lat:52.44983527357394}} containerStyle={{height:150}}/>
         </div>
             </li>
           ))}
