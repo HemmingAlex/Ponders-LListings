@@ -1,6 +1,6 @@
 import React from 'react'
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
-import {svgMarker} from "../../assets/svgMarker"
+// import {svgMarker} from "../../assets/svgMarker"
 
 type sizes = {
     height: number
@@ -33,7 +33,7 @@ const newContainerStyle = {width:"any", height:containerStyle.height}
   })
 
   const [map, setMap] = React.useState(null)
-const Cords = coordinates? coordinates : {lng:-0.08234758796568183,  lat:51.512552003919374};
+const Cords =  {lng:-0.08234758796568183,  lat:51.512552003919374};
 
   const onLoad = React.useCallback(function callback(map) {
     const bounds = new (window as any).google.maps.LatLngBounds(Cords);

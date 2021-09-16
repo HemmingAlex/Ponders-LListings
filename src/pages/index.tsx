@@ -16,6 +16,7 @@ export default function Index() {
           <h1>
             Ponders East Listings<span className="fancy">.</span>
           </h1>
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1amfEpucobtYa5iZSjsOXoCcu7w3ZOB2w" width="640" height="480"></iframe>
           <span className="handle">Gibson and co</span>
           <h2>Great houseses for living and not living in</h2>
           <SocialList />
