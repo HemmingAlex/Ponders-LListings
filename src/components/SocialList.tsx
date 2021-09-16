@@ -2,6 +2,7 @@ import React from "react";
 import Twitter from "../assets/twitter-alt.svg";
 import GitHub from "../assets/github-alt.svg";
 import Facebook from "../assets/facebook-alt.svg";
+import LinkedIn from "../assets/linkedIn-alt.svg";
 import config from "../lib/config";
 
 export function SocialList({}) {
@@ -16,12 +17,12 @@ export function SocialList({}) {
         <Twitter width={24} height={24} fill={"#222"} />
       </a>
       <a
-        title="GitHub"
-        href={`https://github.com/${config.github_account}`}
+        title="LinkedIn"
+        href={`https://www.linkedin.com/company/ponderseast`}
         target="_blank"
         rel="noopener"
       >
-        <GitHub width={24} height={24} fill={"#222"} />
+        <LinkedIn width={28} height={28}  />
       </a>
       <a
         title="Facebook"
@@ -32,6 +33,7 @@ export function SocialList({}) {
       >
         <Facebook width={31} height={31}
          style={{margin:0, padding:0}} fill={"#222"} />
+
       </a>
       <footer>
       <div>
