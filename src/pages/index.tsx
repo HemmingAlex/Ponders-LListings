@@ -3,7 +3,7 @@ import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 import { SocialList } from "../components/SocialList";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function Index() {
     return (
@@ -19,7 +19,7 @@ export default function Index() {
                     </h1>
                     <br />
                     <div className="pl-9">
-                    <Image
+                    <img
                     className="rounded-xl"
                         src="/images/James.JPG"
                         height={300}
