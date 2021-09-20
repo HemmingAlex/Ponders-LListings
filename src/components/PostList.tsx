@@ -20,9 +20,9 @@ export default function PostList({ posts, tags, pagination }: Props) {
     <div className={"container"}>
       <div className={"posts"}>
             <ul className={"post-list"}>
-            <h1>Listings</h1>
+            <h1 className="text-xl text-gold font-bold">Listings</h1>
           {posts.map((it, i) => (
-            <li key={i}>
+            <li key={i} className="mx-4">
               <PostItem post={it} />
               <Maps  coordinates={{lng:-0.08234758796568183,  lat:51.512552003919374 }} containerStyle={{height:150}}/>
             </li>

@@ -13,7 +13,7 @@ export default function Navigation() {
         <ul>
           <li>
             <Link href="/">
-              <a className={router.pathname === "/" ? "active" : null}>about</a>
+              <a className={router.pathname === "/" ? "active" : null}>Home</a>
             </Link>
           </li>
           <li>
@@ -24,6 +24,39 @@ export default function Navigation() {
                 }
               >
                 Listings
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/about">
+              <a
+                className={
+                  router.pathname.startsWith("/about") ? "active" : null
+                }
+              >
+                About
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/policy">
+              <a
+                className={
+                  router.pathname.startsWith("/policy") ? "active" : null
+                }
+              >
+                Policy
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/map">
+              <a
+                className={
+                  router.pathname.startsWith("/map") ? "active" : null
+                }
+              >
+                Map
               </a>
             </Link>
           </li>
