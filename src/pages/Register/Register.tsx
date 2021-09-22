@@ -10,13 +10,8 @@ function Refister() {
                     Register<span className=" text-black">. </span>
                 </h1>
                 <iframe
-                    className="overflow-hidden"
+                    className="w-screen h-screen"
                     src="https://docs.google.com/forms/d/e/1FAIpQLSfeqrmPt4ZRO-5YF8-Ca87Pvko8CbzEqDP4qWnbyegu86DXEQ/viewform?embedded=true"
-                    width="640"
-                    height="2357"
-                    frameborder="0"
-                    marginheight="0"
-                    marginwidth="0"
                 >
                     Loading…
                 </iframe>
