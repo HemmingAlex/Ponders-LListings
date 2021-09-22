@@ -39,24 +39,13 @@ export default function Navigation() {
             </Link>
           </li>
           <li>
-            <Link href="/policy">
-              <a
-                className={
-                  router.pathname.startsWith("/policy") ? "active" : null
-                }
-              >
-                Policy
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/map">
+            <Link href="/Register">
               <a
                 className={
                   router.pathname.startsWith("/map") ? "active" : null
                 }
               >
-                Map
+                Register
               </a>
             </Link>
           </li>

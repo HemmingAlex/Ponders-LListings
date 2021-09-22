@@ -14,8 +14,8 @@ export default function Index() {
 
             <div className="container">
                 <div>
-                    <h1 className="text-gold flex justify-content pl-8">
-                        Ponders East Listings<span className="text-black">.</span>
+                    <h1 className="text-gold flex font-bold justify-content">
+                        Ponders East <span className="text-black">.</span>
                     </h1>
                     <br />
                     <div className="pl-9">

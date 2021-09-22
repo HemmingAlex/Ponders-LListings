@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import styles from "../../public/styles/content.module.css";
 import Author from "./Author";
 import Copyright from "./Copyright";
@@ -38,6 +38,9 @@ export default function PostLayout({
 }: Props) {
   const keywords = tags.map(it => getTag(it).name);
   const authorName = getAuthor(author).name;
+  useEffect(()=>{
+console.log(children)
+  },[])
   return (
     <Layout>
       <BasicMeta
@@ -77,7 +80,9 @@ export default function PostLayout({
               </div>
             </div>
           </header>
-          <div className={styles.content}>{children}</div>
+          <div className={styles.content}>
+            {children}
+          </div>
           <ul className={"tag-list"}>
             {tags.map((it, i) => (
               <li key={i}>
