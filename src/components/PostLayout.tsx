@@ -39,7 +39,7 @@ export default function PostLayout({
   const keywords = tags.map(it => getTag(it).name);
   const authorName = getAuthor(author).name;
   useEffect(()=>{
-console.log(children)
+console.log(children, "children fam")
   },[])
   return (
     <Layout>
@@ -70,7 +70,7 @@ console.log(children)
       <div className={"container"}>
         <article>
           <header>
-            <h1>{title}</h1>
+            <h1>{title}fam</h1>
             <div className={"metadata"}>
               <div>
                 <Date date={date} />
@@ -81,12 +81,12 @@ console.log(children)
             </div>
           </header>
           <div className={styles.content}>
-            {children}
+            {children}?
           </div>
           <ul className={"tag-list"}>
             {tags.map((it, i) => (
               <li key={i}>
-                <TagButton tag={getTag(it)} />
+                <TagButton tag={getTag(it)} /> wawa wee wa
               </li>
             ))}
           </ul>

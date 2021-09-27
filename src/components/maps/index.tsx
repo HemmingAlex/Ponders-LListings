@@ -29,7 +29,7 @@ const isntMobile = 600;
 const newContainerStyle = {width:"any", height:containerStyle.height}
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyAdCORUo2xQf-bNRZtP1lmQDDxrjf3Z_iw"
+    googleMapsApiKey: process.env.GOOGLE_API,
   })
 
   const [map, setMap] = React.useState(null)
