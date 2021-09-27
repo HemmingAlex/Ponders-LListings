@@ -1,3 +1,7 @@
 [build]
   publish = "dist"
   command = "npm run export"
+[[listings.main]]
+    name = "Gallery"
+    url  = "/gallery"
+    weight = 4
