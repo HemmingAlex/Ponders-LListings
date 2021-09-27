@@ -9,33 +9,33 @@
     outline: none;
     font-size: 15px;
     border-radius: 3px;
-    /* margin-bottom: 3px; */
     box-shadow: 0px 1px 5px 1px hsl(0, 0%, 60%);
-    margin-top:13px;
+    margin-top: 13px;
     transition: 0.17s;
-    position:relative;
-  }
-  .icon{
-      /* font-size: 1.25em; */
-    color:white;
-    position:absolute;
-    right:25px;
-text-align:right;
-justify-content: flex-end;
+    position: relative;
 }
-  
-  .active, .collapsible:hover {
+
+.icon {
+    color: white;
+    position: absolute;
+    right: 25px;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.active,
+.collapsible:hover {
     background-color: hsl(35, 83%, 37%);
-  }
-  
-  .content {
+}
+
+.content {
     padding: 0 18px;
     max-height: 0px;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
-  }
-  .content > div{
-      padding: 8px 0px;
-      font-size: 18px;
-  }
+}
+.content > div {
+    padding: 8px 0px;
+    font-size: 18px;
+}
