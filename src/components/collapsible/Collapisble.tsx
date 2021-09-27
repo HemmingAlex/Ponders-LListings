@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import S from "./collapsible.module.css";
+import S from "./Coll.module.css";
 
 import PropTypes from "prop-types";
 import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
