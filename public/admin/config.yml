@@ -152,3 +152,11 @@ collections:
     fields: 
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Gallery Image", name: "image", widget: "image", media_library: {config: {multiple: true}}}
+  - label: "Featured Image"
+    name: "thumbnail"
+    widget: "image"
+    choose_url: true
+    default: "/uploads/chocolate-dogecoin.jpg"
+    media_library:
+      config:
+        multiple: true
