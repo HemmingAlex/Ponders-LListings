@@ -18,11 +18,8 @@ function About() {
     return (
         <Layout>
             <div className="mx-9 ">
-                <h1 className=" font-bold text-gold text-4xl mb-4">About </h1>
-                <div className="text-3xl font-bold">
-                    I am an Independent Property Advisor: and some more info about the stuff here
-                </div>
-                <div className="m-8">
+           
+                <div className="m-8 flex flex-wrap">    
                     {!clicked && (
                         <img
                             className="rounded-xl"
@@ -45,7 +42,11 @@ function About() {
                                 onClick={() => setClicked(!clicked)}
                             />
                         </div>
-                    )}
+                    )}                <div className="mx-5 my-2 text-2xl w-1/2 font-bold">
+ <h1 className="font-bold text-gold text-4xl mb-4">About</h1>
+                    I am an Independent Property Advisor
+                    <br/>and some more info about this stuff here
+                </div>
                 </div>
                 <div className="mr-20">
                     <Collapisble
