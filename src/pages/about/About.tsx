@@ -2,11 +2,19 @@ import React, { useState, useEffect, useRef } from "react";
 import Layout from "../../components/Layout";
 // import Image from "next/image";
 import { SocialList } from "../../components/SocialList";
-import  Collapisble  from "../../components/collapsible";
+import Collapisble from "../../components/collapsible";
+import Modal from "../../components/modal";
+import Button from "../../components/Button";
 
 function About() {
+    const [modalOpen, setModalOpen] = useState(false);
+
     const [clicked, setClicked] = useState(false);
     const picRef = useRef(null);
+
+    const flip = () => {
+        setModalOpen(!modalOpen);
+    };
 
     useEffect(() => {
         if (clicked === false) {
@@ -18,8 +26,7 @@ function About() {
     return (
         <Layout>
             <div className="mx-9 ">
-           
-                <div className="m-8 flex flex-wrap">    
+                <div className="m-8 flex flex-wrap">
                     {!clicked && (
                         <img
                             className="rounded-xl"
@@ -30,23 +37,32 @@ function About() {
                         />
                     )}
                     {clicked && (
-                        <div ref={picRef} className="w-screen h-screen">
+                        <Modal
+                        handleClose={() => setClicked(!clicked)}
+                        full={true}
+                 >
                             <img
                                 className="rounded-xl"
                                 src="/images/James.JPG"
                                 height={500}
                                 width={500}
-                                // layout="fill"
-                                // objectFit="contain"
                                 alt="Portrait"
-                                onClick={() => setClicked(!clicked)}
                             />
-                        </div>
-                    )}                <div className="mx-5 my-2 text-2xl w-1/2 font-bold">
- <h1 className="font-bold text-gold text-4xl mb-4">About</h1>
-                    I am an Independent Property Advisor
-                    <br/>and some more info about this stuff here
-                </div>
+                        </Modal>
+                    )}{" "}
+                    <div className="mx-5 my-2 text-2xl w-1/2 font-bold">
+                        <h1 className="font-bold text-gold text-4xl mb-4">
+                            About
+                        </h1>
+                        <Button onClick={flip}>Open modal </Button>
+                        {modalOpen &&
+                                                <Modal handleClose={flip}>info or picture</Modal>
+                        }
+
+                        I am an Independent Property Advisor
+                        <br />
+                        and some more info about this stuff here
+                    </div>
                 </div>
                 <div className="mr-20">
                     <Collapisble

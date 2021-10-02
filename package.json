@@ -16,6 +16,7 @@
     "@mapbox/rehype-prism": "^0.6.0",
     "@react-google-maps/api": "^2.2.0",
     "@svgr/webpack": "^5.5.0",
+    "@testing-library/react": "^12.1.1",
     "@types/js-yaml": "^4.0.0",
     "date-fns": "^2.19.0",
     "framer-motion": "^4.1.17",
