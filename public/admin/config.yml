@@ -163,6 +163,6 @@ collections:
     folder: "site/content/gallery" 
     create: true 
     fields: 
-      - {label: "Image", name: "image", widget: "image", media_library: {config: {multiple: true}}}
+      - {label: "Image", name: "image", widget: "image", media_library: {name: cloudinary, config: {multiple: true, cloud_name : ponders-east, api_key:  662236764754334}}}
  
 
