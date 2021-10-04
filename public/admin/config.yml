@@ -147,6 +147,17 @@ collections:
         widget: "markdown"
   - name: "galleryImages"
     label: "Gallery"
+    media_library:
+      name: cloudinary
+      config:
+        cloud_name: ponders-east
+        api_key:  662236764754334
+        # api key doesnt matter if it is exposed.
+        default_transformations:
+          - - fetch_format: auto
+              width: 160
+              quality: auto
+              crop: scale
     widget: "list"
     summary: '{{fields.image}}'
     folder: "site/content/gallery" 
@@ -154,4 +165,12 @@ collections:
     fields: 
       - {label: "Image", name: "image", widget: "image", media_library: {config: {multiple: true}}}
  
- 
+ media_library:
+  name: cloudinary
+  output_filename_only: false
+  config:
+    default_transformations:
+      - - fetch_format: auto
+          width: 160
+          quality: auto
+          crop: scale
