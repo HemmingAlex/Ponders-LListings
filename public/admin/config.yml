@@ -145,13 +145,13 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
-  - name: gallery
-    label: "Gallery Image" 
+  - name: "galleryImages"
+    label: "Gallery"
+    widget: "list"
+    summary: '{{fields.image}}'
     folder: "site/content/gallery" 
     create: true 
     fields: 
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Gallery Image", name: "image", widget: "image", media_library: {config: {multiple: true}}}
- 
+      - {label: "Image", name: "image", widget: "image", media_library: {config: {multiple: true}}}
  
  
