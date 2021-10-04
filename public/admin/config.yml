@@ -165,12 +165,4 @@ collections:
     fields: 
       - {label: "Image", name: "image", widget: "image", media_library: {config: {multiple: true}}}
  
- media_library:
-  name: cloudinary
-  output_filename_only: false
-  config:
-    default_transformations:
-      - - fetch_format: auto
-          width: 160
-          quality: auto
-          crop: scale
+
