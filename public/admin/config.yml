@@ -4,7 +4,17 @@ backend:
 media_folder: public/images
 public_folder: /images
 publish_mode: editorial_workflow
-
+media_library:
+  name: cloudinary
+  output_filename_only: false
+  config:
+    cloud_name: ponders-east
+    api_key:  662236764754334
+    default_transformations:
+      - - fetch_format: auto
+          width: 160
+          quality: auto
+          crop: scale
 collections:
   - name: "config"
     label: "Config"
@@ -158,11 +168,11 @@ collections:
               width: 160
               quality: auto
               crop: scale
-    widget: "list"
     summary: '{{fields.image}}'
     folder: "site/content/gallery" 
     create: true 
     fields: 
       - {label: "Image", name: "image", widget: "image", media_library: {name: cloudinary, config: {multiple: true, cloud_name : ponders-east, api_key:  662236764754334}}}
+      - {label: "list", name: "list", widget: "list", media_library: {name: cloudinary, config: {multiple: true, cloud_name : ponders-east, api_key:  662236764754334}}}
  
 
