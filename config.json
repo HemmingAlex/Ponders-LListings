@@ -1,11 +1,17 @@
 {
   "base_url": "https://wutali-nextjs-netlify-blog.netlify.app",
-  "site_title": "Ponders East",
+  "site_title": "East London Property News",
   "site_description": "Bringing People and Properties Together",
   "site_keywords": [
     "Estate Agent",
     "Properties",
-    "Tenants"
+    "Tenants",
+    "Property News",
+    "Hackney Property News",
+    "Tower Hamlets Property News",
+    "Limehouse Property News",
+    "London Property News",
+    "East London Property News"
   ],
   "posts_per_page": 5,
   "twitter_account": "@PondersEast",
